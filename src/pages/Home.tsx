@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <h1 className="text-2xl font-bold mb-6">🛍 Trending Products</h1>
+      <h1 className="text-2xl font-bold mb-6">Trending Products</h1>
 
       {loading ? (
         <p className="text-gray-600 dark:text-gray-400">Loading products...</p>

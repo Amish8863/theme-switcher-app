@@ -5,10 +5,12 @@ const savedTheme = (localStorage.getItem('app-theme') as Theme) || 'theme1';
 
 interface ThemeState {
   currentTheme: Theme;
+  open: boolean;
 }
 
 const initialState: ThemeState = {
   currentTheme: savedTheme,
+  open: false
 };
 
 const themeSlice = createSlice({
@@ -19,8 +21,11 @@ const themeSlice = createSlice({
       state.currentTheme = action.payload;
       localStorage.setItem('app-theme', action.payload);
     },
+    setOpen: (state, action) => {
+      state.open = action.payload;
+    }
   },
 });
 
-export const { setTheme } = themeSlice.actions;
+export const { setTheme, setOpen } = themeSlice.actions;
 export default themeSlice.reducer;

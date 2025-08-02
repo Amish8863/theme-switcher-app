@@ -14,6 +14,7 @@
     "@fontsource/pacifico": "^5.2.6",
     "@fontsource/pt-serif": "^5.2.6",
     "@reduxjs/toolkit": "^2.8.2",
+    "lucide-react": "^0.536.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
