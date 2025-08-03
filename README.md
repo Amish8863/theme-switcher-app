@@ -34,10 +34,15 @@ Click on the link to see the application
 
 ## 🖼️ Screenshots
 
-> Add these later after deploying:
-- Theme 1: Minimalist layout
-- Theme 2: Dark with sidebar
-- Theme 3: Colorful with cards
+### Theme 1 (Minimalist)
+![Theme 1](./public/screenshots/theme1.png)
+
+### Theme 2 (Dark + Sidebar)
+![Theme 2](./public/screenshots/theme2.png)
+
+### Theme 3 (Colorful Cards)
+![Theme 3](./public/screenshots/theme3.png)
+
 
 ---
 
@@ -58,17 +63,22 @@ Click on the link to see the application
 
 ## 📁 Folder Structure
 
+<details>
+<summary>Click to view</summary>
+
+```bash
 src/
-├── assets/ # Static images/icons (if needed)
-├── components/ # Reusable UI components (Card, Header, etc.)
+├── assets/          # Static images/icons (if needed)
+├── components/      # Reusable UI components (Card, Header, etc.)
 ├── features/
-│ └── theme/ # Redux slice for theme
-├── layouts/ # Layouts: MainLayout, SidebarLayout
-├── pages/ # Home, About, Contact
-├── redux/ # Redux store config
-├── App.tsx # App router + layout logic
-├── main.tsx # Entry point
-└── index.css # Tailwind and font imports
+│   └── theme/       # Redux slice for theme
+├── layouts/         # Layouts: MainLayout, SidebarLayout
+├── pages/           # Home, About, Contact
+├── redux/           # Redux store config
+├── App.tsx          # App router + layout logic
+├── main.tsx         # Entry point
+└── index.css        # Tailwind and font imports
+```
 
 ### 1. Clone the Repo
 
