@@ -1,69 +1,102 @@
-# React + TypeScript + Vite
+# 🎨 Multi-Theme Switcher App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, mobile-first React + TypeScript application with three distinct visual themes.  
+Built using **Redux Toolkit**, **Tailwind CSS**, and **React Router DOM**.  
+It displays live product data and allows users to switch themes with different layouts, fonts, and colors.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- 🎨 **3 Complete Themes**
+  - **Theme 1**: Minimalist light layout with Inter (sans-serif)
+  - **Theme 2**: Dark mode + sidebar layout + bold serif font
+  - **Theme 3**: Colorful card grid layout with Pacifico font (playful)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🛠 **Redux Toolkit** for global theme state management
+- 🖼 **Live product listing** from [FakeStore API](https://fakestoreapi.com/)
+- 📱 **Mobile-first responsive design**
+- 💾 Theme is persisted using **localStorage**
+- 🎯 Dynamic UI: each theme uses different layout, font, and structure
+- 🧭 Built with **React Router DOM** (`/`, `/about`, `/contact`)
+- 🧩 Reusable components and clean architecture
+- 🎈 Smooth transitions and hover effects
+- ✅ Fully compliant with PDF assessment requirements
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Live Application URL
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The Application is deployed in 
+[live url](https://theme-switcher-app-blue.vercel.app/)
+
+Click on the link to see the application
+
+## 🖼️ Screenshots
+
+> Add these later after deploying:
+- Theme 1: Minimalist layout
+- Theme 2: Dark with sidebar
+- Theme 3: Colorful with cards
+
+---
+
+## 🔧 Tech Stack
+
+| Tech             | Purpose                          |
+|------------------|----------------------------------|
+| React            | UI Framework                     |
+| TypeScript       | Type Safety                      |
+| Vite             | Fast dev + build tool            |
+| Tailwind CSS     | Utility-first CSS styling        |
+| Redux Toolkit    | Theme state management           |
+| React Router DOM | Routing (Home, About, Contact)   |
+| Lucide-react     | Clean icon set                   |
+| Fakestore API    | Dummy product data               |
+
+---
+
+## 📁 Folder Structure
+
+src/
+├── assets/ # Static images/icons (if needed)
+├── components/ # Reusable UI components (Card, Header, etc.)
+├── features/
+│ └── theme/ # Redux slice for theme
+├── layouts/ # Layouts: MainLayout, SidebarLayout
+├── pages/ # Home, About, Contact
+├── redux/ # Redux store config
+├── App.tsx # App router + layout logic
+├── main.tsx # Entry point
+└── index.css # Tailwind and font imports
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/Amish8863/theme-switcher-app.git
+cd theme-switcher-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+In order to run the application Type the following command
+
+```bash
+npm run dev
+```
+
+Now open your browser and go to:
+```bash
+http://localhost:51733
+```
+You'll see the app running locally
+
+## Author
+### Amish Singh
+[GitHub Profile](https://github.com/Amish8863)
+
+The Application Runs on **localhost:5173**
