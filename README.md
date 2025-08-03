@@ -26,9 +26,8 @@ It displays live product data and allows users to switch themes with different l
 ---
 
 ## Live Application URL
-
-The Application is deployed in 
-[live url](https://theme-switcher-app-blue.vercel.app/)
+### The Application is deployed on vercel
+[theme-switcher-app-blue.vercel.app](https://theme-switcher-app-blue.vercel.app/)
 
 Click on the link to see the application
 
@@ -102,12 +101,11 @@ npm run dev
 
 Now open your browser and go to:
 ```bash
-http://localhost:51733
+http://localhost:5173
 ```
 You'll see the app running locally
+The Application Runs on **localhost:5173**
 
 ## Author
 ### Amish Singh
 [GitHub Profile](https://github.com/Amish8863)
-
-The Application Runs on **localhost:5173**
