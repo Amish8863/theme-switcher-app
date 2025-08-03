@@ -1,5 +1,7 @@
 import { type Theme } from './themeTypes';
 
+// Defining the styles for different themes
+
 export const getButtonClass = (theme: Theme): string => {
   switch (theme) {
     case 'theme1':

@@ -19,6 +19,8 @@ const Home = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // fetching data from api
+
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())

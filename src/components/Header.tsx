@@ -20,10 +20,14 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/70 dark:bg-gray-900/70 shadow-lg z-50 p-4 flex flex sm:flex-row items-center justify-between px-6 md:px-10 gap-2 sm:gap-0">
+
+      {/* Showing App for mobile and SWITCH for another screen size */}
       <div className="text-xl font-extrabold tracking-tight text-gray-800 dark:text-white">
         <span className="block sm:hidden">APP</span>
         <span className="hidden sm:block">SWITCH</span>
       </div>
+
+      {/* Showing conditionally icon only */}
 
       {currentTheme !== 'theme2' && (
         <nav className="flex gap-4">
@@ -53,6 +57,7 @@ const Header = () => {
           <option value="theme3">Theme 3</option>
         </select>
 
+        {/* Chevron icon */}
         <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-500 dark:text-gray-400">
           <svg
             className="h-4 w-4"

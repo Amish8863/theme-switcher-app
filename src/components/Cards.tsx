@@ -20,7 +20,7 @@ const Card = ({ title, image, price }: Props) => {
         <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">${price}</p>
 
         <button className="w-full py-2 px-4 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition duration-200">
-          🛒 Add to Cart
+          Add to Cart
         </button>
       </div>
     </div>
