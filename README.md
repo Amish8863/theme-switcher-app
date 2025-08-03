@@ -78,7 +78,7 @@ src/
 ├── App.tsx          # App router + layout logic
 ├── main.tsx         # Entry point
 └── index.css        # Tailwind and font imports
-```
+
 
 ### 1. Clone the Repo
 
